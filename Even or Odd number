@@ -1,0 +1,21 @@
+//This code is written to print the entered number is even or odd
+
+import java.lang.*;
+import java.util.*;
+
+public class Main{
+  public static void main(Strings[] args){
+    
+    Scanner sc = new Scanner(System.in);
+    
+    int num = sc.nextInt(); //this is to take the input from the user and store it in num
+    
+    if( num % 2 == 0 ){
+    //Even
+      System.out.println("Even Number");
+    } else{
+    //Odd
+      System.out.println("Odd Number");
+    }
+  }
+}
