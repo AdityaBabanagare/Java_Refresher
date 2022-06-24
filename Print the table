@@ -1,0 +1,16 @@
+//This code takes the input from the user and prints the multiplaction table of that number from 1 to 10
+
+import java.lang.*;
+import java.util.*;
+
+public class Main{
+  public static void main(String[] args){
+    Scanner sc = new Scanner(System.in);
+    
+    int num = sc.nextInt();
+    
+    for(int i =1; i <= num; i++){
+      System.out.println( num + " * " + i + " = " + num * i);
+    } 
+  }
+}
