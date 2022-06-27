@@ -1,0 +1,29 @@
+//You're going to write some code to help you cook a gorgeous lasagna from your favorite cookbook.
+//Now, you want to find the total number of minutes you've been cooking, or the sum of your preparation time and the time the lasagna has already spent baking in the oven.
+
+//Given the number of layers added to the lasagna and the number of minutes the lasagna has been baking in the oven, find the total elapsed cooking time (prep + bake) in minutes.
+
+import java.util.*;
+import java.lang.*;
+
+public class Main{
+    public static void main(String[] args){
+
+        Scanner sc= new Scanner(System.in);
+
+        //Number of layers
+        int numLayers = sc.nextInt();
+
+        //Time already spent
+        int timeSpent = sc.nextInt();
+
+        //Calculate the preparation time
+        int prep = 2 * numLayers;
+
+        //Calculate the remaining time
+        //int remTime = 40 - timeSpent;
+
+        //Print the total output
+        System.out.print(prep + timeSpent);
+    }
+}
