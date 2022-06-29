@@ -1,0 +1,68 @@
+import java.util.*;
+import java.lang.*;
+
+class Main {
+	public static void main(String args[]) {
+		// Your code goes here
+		
+		//Q) Electricity bill
+		/*Scanner sc = new Scanner(System.in);
+		
+		int x = sc.nextInt();
+		
+		if ( x >= 1 && x <= 50) {
+			System.out.print((float)(x * 0.5));
+		} else if( x >= 51 && x <= 150){
+			System.out.print((float)((50 * 0.5) + ((x - 50)*0.75)));
+		} else if ( x >= 151){
+			System.out.print(((float)((50 * 0.5) + (100*0.75) + ((x- 150) * 1.2)));
+		} */
+		
+		//Q) to print all the odd numbers till N
+		Scanner sc = new Scanner(System.in);
+		
+		int x = sc.nextInt();
+		/* //below code is to print all the odd numbers till x
+		//1st approach
+		int i = 1;
+		while( i <= x){
+			if ( i % 2 != 0){
+				System.out.println(i);
+			}
+			i = i + 1;
+		}
+		
+		//2nd approach for odd numbers
+		
+		int i = 1;
+		while (i <= x){
+			System.out.println(i);
+			i = i + 2;
+		}
+		*/
+		//below code is to print all the even numbers till x
+		/*
+		int i = 2;
+		while(i <= x){
+			System.out.println(i);
+			i = i +2;
+		}
+		*/
+		
+		//Q 4) multiple of 4
+		/*
+		int i = 4;
+		while( i <= x){
+			System.out.println(i);
+			i += 4;
+		} */
+		
+		//Q) perfect squares
+		int  i = 1;
+		while (i*i <= x){
+			System.out.println(i*i);
+			i += 1;
+		}
+		
+	}
+}
