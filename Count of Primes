@@ -1,0 +1,32 @@
+import java.lang.*;
+import java.util.*;
+
+public class Main{
+    public static void main(String[] args){
+        
+        Scanner sc = new Scanner(System.in);
+        
+        int N = sc.nextInt();
+        // boolean flag = true;
+         int sum = 0;
+        
+        //this is the number to check till N
+        for(int i = 2; i <= N; i++){
+            boolean flag = true;
+            // int sum = 0;
+            for(int j = 2; j < i; j++){
+              if(i % j == 0){
+                 //sum = sum + 1;
+                 flag = false;
+                }
+            }
+            if(flag == true){
+                sum = sum + 1;
+            }
+            
+        }
+        
+        //System.out.println(flag);
+        System.out.println(sum);
+    }
+}
