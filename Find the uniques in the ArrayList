@@ -1,0 +1,60 @@
+//Find the unique values in the ArrayList
+// inputs: 
+// 1> Number of testcases
+// 2> Size or array & items or array per testcase
+
+//-------------------PROGRAM---------------------//
+
+import java.lang.*;
+import java.util.*;
+
+public class Main{
+    public static void main(String[] args){
+        Scanner sc = new Scanner(System.in);
+        
+        //Take the testcase inputs
+        int testCase = sc.nextInt();
+        
+        //iterate through testcases
+        for(int i = 0; i < testCase; i++){
+
+            ArrayList<Integer> arr = new ArrayList<Integer>();
+
+            //take the size of array
+            int arraySize = sc.nextInt();
+            
+            //add the items to the ArrayList
+            for(int k = 0; k < arraySize; k++){
+                arr.add(sc.nextInt());
+            }
+            
+            //create an output array
+            ArrayList<Integer> outArr = new ArrayList<Integer>();
+            
+            //LOGIC
+            for(int j =0; j < arraySize; j++){
+                int tmp = arr.get(j);
+                int count = 0;
+                for(int m = 0; m < arraySize; m++){
+                    if(tmp == arr.get(m)){
+                        count++;
+                    }
+                }
+            
+                if( count == 1){
+                    outArr.add(arr.get(j));
+                }
+            }
+            
+            //Sort the output array
+            Collections.sort(outArr);
+            
+            for(int z = 0; z < outArr.size(); z++){
+                System.out.print(outArr.get(z)+" ");
+            }
+            
+            System.out.println();
+
+        }
+    }
+}
